@@ -102,7 +102,7 @@ async def end_callbacc(client, CallbackQuery):
 @Client.on_message(filters.command(["stream", f"stream@{USERNAME}"]) & filters.group & ~filters.edited)
 @authorized_users_only
 async def stream(client, m: Message):
-    msg = await m.reply_text("🔄 `Processing ...`")
+    msg = await m.reply_text("🔄 `Baslatilir ...`")
     chat_id = m.chat.id
     media = m.reply_to_message
     if not media and not ' ' in m.text:
@@ -136,7 +136,7 @@ async def stream(client, m: Message):
         else:
             await msg.edit("🔄 `Canli Video Yayinima Start Verilir ...`")
             link = query
-            thumb = "https://telegra.ph/Plugin-d%C3%BCz%C9%99ltm%C9%99k-09-10"
+            thumb = "https://telegra.ph/file/2687c7cf64f6a1d1d8fe0.jpg"
 
         vid_call = VIDEO_CALL.get(chat_id)
         if vid_call:
@@ -188,7 +188,7 @@ async def stream(client, m: Message):
             lel = await client.download_media(lol['file_id'])
             thumb = lel
         else:
-            thumb = "https://telegra.ph/file/62e86d8aadde9a8cbf9c2.jpg"
+            thumb = "https://telegra.ph/file/2687c7cf64f6a1d1d8fe0.jpg"
 
         video = await client.download_media(media)
 
