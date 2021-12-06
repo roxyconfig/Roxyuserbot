@@ -33,9 +33,9 @@ if not os.path.isdir("./downloads"):
 
 Bot.start()
 User.start()
-print("\n[INFO] - STARTED VIDEO PLAYER BOT, JOIN @ASMSAFONE !")
+print("\n[INFO] - Video Oyuncu Botuna Basladi, JOIN @Piramidasohbet !")
 
 idle()
 Bot.stop()
 User.stop()
-print("\n[INFO] - STOPPED VIDEO PLAYER BOT, JOIN @ASMSAFONE !")
+print("\n[INFO] - Video Oyuncu Botu Dayndirildi, JOIN @Piramidasohbet !")
